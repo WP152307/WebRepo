@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.bgPink{background-color : pink}
+	.bgSalmon{background-color : Salmon}
+	.bgyellowgreen{background-color : yellowgreen}
+	.bgWhite{background-color : white}
+	.bgwheat{background-color : wheat}
+	.bgTurquoise{background-color : Turquoise}
+	.bgThistle{background-color : Thistle}
+	.bgWhite{background-color : white}
+	.bgTan{background-color : tan}
+	.border{border:3px solid red}
+</style>
+<script>
+function changeColor(color){
+	var c = document.getElementById("container");
+	//c.style.backgroundColor = color;
+	c.setAttribute("class",color); //<div id = "container" class="bgPink">
+}
+function toUpperCase(e){
+	//var w = document.getElementById("word");
+	e.value = e.value.toUpperCase();
+}
+function addBorder(e){
+	//var b = documentgetElementById("box");
+	//e.style.border = "3px solid red";
+	e.setAttribute("class","border");//<p id = "box" class = "border">
+}
+function removeBorder(e){
+	//var r = documentgetElementById("box");
+	//e.style.border = "";
+	e.removeAttribute("class");
+}
+//https://www.w3schools.com/colors/colors_names.asp
+</script>
+</head>
+<body onload = "alert('웹 페이지 로딩 됨');">
+<div id = "container" >
+<input type = "radio" name = "color" onclick = "changeColor('bgPink');">분홍색
+<input type = "radio" name = "color" onclick = "changeColor('bgyellowgreen');">연두색
+<input type = "radio" name = "color" onclick = "changeColor('bgwheat');">살구색
+<input type = "radio" name = "color" onclick = "changeColor('bgTurquoise');">민트색
+<input type = "radio" name = "color" onclick = "changeColor('bgThistle');">연보라색
+<input type = "radio" name = "color" onclick = "changeColor('bgTan');">나무색
+<input type = "radio" name = "color" onclick = "changeColor('bgSalmon');">자몽색
+<input type = "radio" name = "color" onclick = "changeColor('bgwhite');">원래대로
+
+<br>
+<input type = "text" id = "word" onchange = "toUpperCase(this);">
+<div id = "box"  onmouseover = "addBorder(this);" onmouseout = "removeBorder(this);">
+마우스를 위로 올려볼까나?
+</div>
+</div>
+</body>
+</html>
