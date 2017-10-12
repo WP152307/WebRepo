@@ -89,16 +89,16 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/WebClass/myblog/img/봄.jpg" alt="First slide">
+      <img class="d-block w-100" src="/WebClass/봄.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/WebClass/myblog/img/여름.jpg" alt="Second slide">
+      <img class="d-block w-100" src="/WebClass/여름.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/WebClass/myblog/img/가을.jpg" alt="Third slide">
+      <img class="d-block w-100" src="/WebClass/가을.jpg" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/WebClass/myblog/img/겨울.jpg" alt="Fourth slide">
+      <img class="d-block w-100" src="/WebClass/겨울.jpg" alt="Fourth slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
